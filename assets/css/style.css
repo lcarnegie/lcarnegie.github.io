@@ -56,12 +56,12 @@ p {
 }
 
 ::-moz-selection {
-  background: #b8a07e;
+  background: #CC5200;
   color: #fff;
 }
 
 ::selection {
-  background: #b8a07e;
+  background: #CC5200;
   color: #fff;
 }
 
@@ -78,7 +78,7 @@ p {
 }
 
 .btn:hover, .btn:focus {
-  color: #fff;
+  color: #CC5200;
 }
 
 .padDiv {
@@ -505,7 +505,7 @@ p {
 #about {
   width: 100%;
   height: auto;
-  background: #f7f7f7;
+  background: white;
   padding-top: 120px;
 }
 
@@ -540,7 +540,7 @@ p {
 # Services
 --------------------------------------------------------------*/
 #services {
-  background: #f7f7f7;
+  background: white;
   position: relative;
   padding-bottom: 80px;
 }
@@ -586,10 +586,25 @@ p {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
+
 .accordion-button {
   font-size: 1.5em;
   color: #070004;
   padding-left: 15%; 
+}
+
+.accordion-button:not(.collapsed) {
+  color: inherit; 
+  background-color: #fff6f5;
+  color: #CC5200;
+}
+
+.accordion-button:not(.collapsed)::after {
+  filter: invert(100%) brightness(90%)
+}
+
+.accordion-button:focus {
+  box-shadow: 0px 0.07em #ebdbd8;
 }
 
 .accordion-body {
