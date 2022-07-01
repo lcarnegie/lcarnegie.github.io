@@ -66,7 +66,7 @@ p {
 }
 
 .btn {
-  background: #333;
+  background: #CC5200;
   border: medium none;
   border-radius: 0;
   color: #fff;
@@ -78,7 +78,7 @@ p {
 }
 
 .btn:hover, .btn:focus {
-  color: #CC5200;
+  color: black;
 }
 
 .padDiv {
@@ -166,6 +166,12 @@ p {
   background: #CC5200;
   color: #fff;
 }
+
+i.back-to-top:hover {
+  background: #CC5200;
+  color: #fff;
+}
+
 .back-to-top.active {
   visibility: visible;
   opacity: 1;
@@ -342,9 +348,6 @@ p {
   }
 }
 
-
-
-
 .navbar-mobile {
   position: fixed;
   overflow: hidden;
@@ -490,7 +493,8 @@ p {
 
 #about .about-descr .p-heading {
   font-family: "Playfair Display", serif;
-  font-size: 28px;
+  font-size: 35px;
+  font-weight: bold;
   text-align: left;
 }
 
@@ -498,6 +502,29 @@ p {
   max-width: 80%;
   margin-bottom: 0;
   text-align: left;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*  In Progress Page 
+/*-----------------------------------------------------------------------------------*/
+#inprogress {
+  width: 100%;
+  height: auto;
+  background: white;
+  padding-top: 120px;
+}
+
+#inprogress .p-heading {
+  font-family: 'Damion', cursive;
+  font-size: 60px;
+  text-align: center;
+  color: #CC5200; 
+  margin-top: -30px;
+}
+
+#inprogress .separator {
+  margin-top: 50px;
+  text-align: center;
 }
 
 /*--------------------------------------------------------------
@@ -548,13 +575,14 @@ p {
 }
 
 /*--------------------------------------------------------------
-# Portfolio
+# Portfolio Accordion
 --------------------------------------------------------------*/
 
 .accordion-button {
   font-size: 1.5em;
   color: #070004;
-  padding-left: 15%; 
+  padding-left: 2%; 
+  z-index: 0;
 }
 
 .accordion-button:not(.collapsed) {
@@ -572,7 +600,32 @@ p {
 }
 
 .accordion-body {
-  padding-left: 15%; 
+  text-align: center;
+}
+
+.card {
+  display: inline-block;
+  margin-right: 1%; 
+  height: auto;
+  width: 40vh;
+  box-shadow: #070004;
+}
+
+.card-body {
+  margin-top: -30px;
+}
+
+@media (max-width: 850px) {
+  .card {
+    display: block;
+    width: 40vh;
+    margin-right: 0%; 
+    margin-left: 13%;
+    margin-bottom: 20px;
+    right: 30px;
+  }
+  
+  
 }
 
 
@@ -580,8 +633,14 @@ p {
 # Journal
 --------------------------------------------------------------*/
 #contact {
-  height: auto;
-  width: 100%;
+  font-size: 40px;
+}
+
+#contacthead {
+  text-transform: none;
+  font-family: 'Damion', cursive;
+  color: #CC5200; 
+  font-size: 40px;
 }
 
 .contact-details {
@@ -826,7 +885,7 @@ blockquote {
   letter-spacing: 0.1em;
   font-weight: 500;
   background: transparent;
-  text-transform: uppercase;
+  text-transform: capitalize;
   transition: all 0.5s ease-in-out 0s;
 }
 
@@ -837,14 +896,26 @@ blockquote {
 
 #footer p {
   font-size: 12px;
-  letter-spacing: 0.1em;
   font-weight: 500;
   margin-top: 0;
   text-transform: uppercase;
 }
 
-.credits {
-  font-size: 13px;
+
+#footer .version {
+  text-transform: none;
+  font-size: 20px;
+  color: #CC5200; 
+  font-family: 'Damion', cursive;
+  margin-top: -32px;
+}
+
+#footer .credits {
+  font-size: 10px;
+}
+
+#allrights {
+  margin-top: -50px;
 }
 
 /** Width between 1200x to 0
