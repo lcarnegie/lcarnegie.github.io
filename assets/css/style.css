@@ -44,7 +44,8 @@ a {
 }
 
 a:hover {
-  transition: all 0.5s ease-in-out 0s;
+  text-decoration: thick underline; 
+  transition: all 0.1s ease-in-out 0s;
 }
 
 p {
